@@ -17,7 +17,7 @@ print(doc.paragraphs[1].runs[0].text) # runs 객체의 리스트
 print(doc.paragraphs[1].runs[1].text)
 print(doc.paragraphs[1].runs[2].text)
 print(doc.paragraphs[1].runs[3].text)
-print(getText('demo.docx'))
+print(getText('data/demo.docx'))
 
 #style -> deprecated (https://m.blog.naver.com/sangja84/221530974938)
 #print(doc.paragraphs[0].style)

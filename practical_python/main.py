@@ -4,6 +4,6 @@ print(spam[0])
 
 print('hello' in spam)
 
-f = open('input.txt', 'r')
+f = open('data/input.txt', 'r')
 str = f.readline()
 print (str)

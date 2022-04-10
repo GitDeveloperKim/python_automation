@@ -1,7 +1,7 @@
 import os, shutil
 
 def fileOpen():
-    f = open('input.txt','r')
+    f = open('data/input.txt', 'r')
     return f
 
 def useShutil():

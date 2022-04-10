@@ -2,7 +2,7 @@ import openpyxl, pprint
 from openpyxl.cell import *
 from openpyxl.styles import Font
 
-wb = openpyxl.load_workbook('example.xlsx')
+wb = openpyxl.load_workbook('data/example.xlsx')
 print(type(wb))
 
 print(wb.get_sheet_names()) # 시트 이름 얻기
@@ -19,7 +19,7 @@ for rowOfCellObjects in temp:
         print(cellObj.coordinate, cellObj.value)
 
 # 두번째 엑셀
-wb = openpyxl.load_workbook('censuspopdata.xlsx')
+wb = openpyxl.load_workbook('data/censuspopdata.xlsx')
 sheet_census = wb.get_sheet_by_name('Population by Census Tract')
 countyData = {}
 
@@ -36,13 +36,13 @@ for row in range(2, sheet_census.max_row + 1):
     countyData[state][county]['pop'] += int(pop)
 
 print('write results...')
-resultFile = open('census2020.txt', 'w')
+resultFile = open('data/census2020.txt', 'w')
 resultFile.write('allData=' + pprint.pformat(countyData))
 resultFile.close()
 print('Done')
 
 # update example
-wb = openpyxl.load_workbook('produceSales.xlsx')
+wb = openpyxl.load_workbook('data/produceSales.xlsx')
 sheet_produce = wb.get_sheet_by_name('Sheet')
 
 PRICE_UPDATE = {'Garlic':3.07, 'Celery': 1.19, 'Lemon' : 1.27}
