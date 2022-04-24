@@ -60,3 +60,5 @@ print(datetime.datetime.strptime('October 21, 2015', '%B %d, %Y'))
 # 파이썬에서 다른 프로그램 실행하기
 import subprocess
 subprocess.Popen('C:\\Windows\\System32\\calc.exe')
+
+subprocess.Popen('c:\\Windows\\notepad.exe')
