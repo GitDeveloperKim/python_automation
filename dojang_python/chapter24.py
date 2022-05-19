@@ -10,3 +10,13 @@ print('python'.center(10))
 
 # 문자열 찾기
 print('apple pineapple'.find('pl'))
+
+# 빈문자열 갯수 찾기
+str = '        def hello_world(a:int):'
+cnt = 0
+for code in list(str):
+    if code == ' ':
+        cnt += 1
+    else:
+        break
+print(cnt)
