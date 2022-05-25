@@ -1,14 +1,14 @@
 import os, shutil
 
-def fileOpen():
-    f = open('data/input.txt', 'r')
-    return f
+def file_open():
+    file = open('data/input.txt', 'r')
+    return file
 
-def useShutil():
+def use_shutil():
     if os.path.exists(r'C:\Users\default.DESKTOP-9K8MUSK\Documents\dev\test_workspace\eggs.txt'):
         shutil.move(r'C:\Users\default.DESKTOP-9K8MUSK\Documents\dev\test_workspace\eggs.txt', r"C:\Users\default.DESKTOP-9K8MUSK\PycharmProjects\python_automation\practical_python\bacon.txt")
 
-def useOsWalk():
+def use_os_walk():
     for folderName, subFolders, fileNames in os.walk(os.getcwd()):
         print('current folder is '+folderName)
 
@@ -48,15 +48,15 @@ if __name__ == '__main__':
     print(current_path.split(os.path.sep))
 
     #shutil 사용해보기
-    useShutil()
+    use_shutil()
 
     #use os walk()
-    useOsWalk()
+    use_os_walk()
 
     #move file name
     moveAnotherFileName()
 
     # 파일 open
-    f = fileOpen()
+    f = file_open()
     print(f.readline())
     f.close()

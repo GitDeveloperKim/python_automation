@@ -2,7 +2,7 @@ import csv
 
 # read
 exampleFile = open('data/example.csv')
-exampleReader = csv.reader(exampleFile) # read(), readline() 대신 csv.reader 사용
+exampleReader = csv.reader(exampleFile)  # read(), readline() 대신 csv.reader 사용
 '''
 exampleData = list(exampleReader) # reader 객체에 list로 얻음
 print(exampleData[0][0])
