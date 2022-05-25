@@ -35,3 +35,10 @@ for i in range(1):
 # pyautogui.typewrite('hello world!')
 #pyautogui.typewrite(['a', 'b', 'left', 'left', 'X', 'Y']) # 키보드 문자열 목록
 # pyautogui.keyDown('shift'); pyautogui.press('4'); pyautogui.keyUp('shift')
+
+# 이미지 인식!!!!
+#print(pyautogui.locateOnScreen('./data/start.png')) #
+#pyautogui.click(4+3, 1032+3)
+
+# 스크린샷 얻기
+#im = pyautogui.screenshot()  # 테스트 결과 저장
